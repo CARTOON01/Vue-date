@@ -1,0 +1,50 @@
+$top-color: DeepSkyBlue;
+$middle-color: rgba(30, 12, 55, 0.4);
+$bottom-color: LightPink;
+
+$gradient-style: 245deg, $top-color, $middle-color, $bottom-color;
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient($gradient-style);
+    background: -o-linear-gradient($gradient-style);
+    background: -moz-linear-gradient($gradient-style);
+    background: linear-gradient($gradient-style);
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+h3.is-3,
+p.time {
+    color: white;
+}
+
+h3.is-3:not(:last-child) {
+    margin: 0;
+    padding: 0;
+}
+
+.time {
+    font-size: 7em;
+}
+
+.shadow {
+    text-shadow: 0 0 15px rgba(100, 100, 100, 0.75);
+}
